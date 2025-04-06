@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icep2t</title>
+</head>
+<body>
+    <div class="home_main">
+        <img id="home_logo" src="assets/75f6ccb1-3baf-4e6e-940a-c196ff02711d.png">
+        <img id="main_logo" src="assets/trans.png">
+        <img id="nitjsr" src="assets/10947278_512 [Converted]@ं3x.png">
+        <img id="logo1" src="assets/nitlogosc.png">
+        <img id="logo2" src="assets/ieeen.png">
+        <img id="logo3" src="assets/IEEEKSpng.png">
+        <img id="logo4" src="assets/ies.png">
+        <img id="logo5" src="assets/vlsi-logo.webp">
+    </div>
+    <nav class="navbar">
+        <a href="generalchair.html" class="general">General Chair</a>
+        <a href="#education" class="edu">Committee</a>
+        
+        <a href="#services" class="authors" >Authors</a>
+        <a href="#services" class="Speakers" >Speakers</a>
+        <a href="sponsorship.html" class="Sponsors" >Sponsors</a>
+        <a href="registrationdetails.html"  class="Registeration">Registeration</a>
+        <a href="contact.html" class="Contact" >Contact Us</a>
+    </nav>
+    <h1>International Conference on Electrical, Electronics and<br> Computer Science with Advance Power Technologies</h1>
+    <p>A Future Trend</p>
+    <i class='bx bxs-calendar' id="cal"></i>
+    <h2 style="font-weight: 700;">29-31 October, 2025</h2>
+    <!-- <i id="submit" class='bx bxs-calendar-check'></i> -->
+    <h3><a href="https://cmt3.research.microsoft.com/ICE2CPT2025"  class="submit">Submit Papers</a></h3>
+    <div class="col-md-5">
+        <div id="countdown" class="text-center custom-box">
+          <div id="counter" class="counter"></div>
+          <script>
+            function updateCountdown() {
+                const targetDate = new Date('October 29, 2025 00:00:00').getTime();
+                const now = new Date().getTime();
+                const timeLeft = targetDate - now;
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                document.getElementById('counter').innerText = `${days} days ${hours} hour ${minutes} min ${seconds} sec`;
+            }
+            setInterval(updateCountdown, 1000);
+            updateCountdown();
+        </script>
+        <style>
+          .counter {
+              font-size: 1.4em;
+              margin: 10px;
+              position: relative;
+              top: -583px;
+              left: 100px;
+              font-weight: 700;
+              background: white;
+               padding-left: -50px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+              font-family: "Anton SC", sans-serif;
+              font-weight: 400;
+              font-style: normal;
+              margin-left: 300px;
+              border-radius: 20px;
+              box-shadow: 0 8px 10px -5px rgba(0, 0.8, 0, 0.8);
+              color: linear-gradient(to right, #00ADF2, #0067B4); 
+              
+            }
+      </style>
+        </div>
+      </div>
+      <div class="dropdown-wrapper">
+          <!-- <div class="dropdown-title">Comittee</div> -->
+          <div class="dropdown">
+            <ul>
+              <li>Adivory Committee</li>
+              <li>Organizing Committee</li>
+              <li>Technical Program Committee </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown-wrapper2">
+          <div class="dropdown-title2"> </div>
+          <div class="dropdown2">
+            <ul>
+              <li>Call For Papers</li>
+              <li> Call for Special Session</li>
+              <li> Important dates</li>
+              <li> Paper Submission Guidelines</li>
+              <li>  Conference Program</li>
+            </ul>
+          </div>
+        </div>
+         
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</body>
+</html>
