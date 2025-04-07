@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Footer xyz</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .footer {
+            background-color: #f8f8f8;
+            color: black;
+            padding: 15px 0;
+            width: 100%;
+        }
+        
+        .footer h5 {
+            color: black;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links a {
+            color: rgba(0, 0, 0, 0.73);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 14px;
+        }
+        
+        .footer-links a:hover {
+            color: #000000fd;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #343a40fd;
+            color: #fff;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: #0d6efd;
+            transform: translateY(-2px);
+        }
+        
+        .logo-section {
+            padding: 15px 0;
+            border-bottom: 1px solid #343a40;
+            text-align: center;
+        }
+        
+        .logo-section h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            color: black;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .logo-section h3:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 2px;
+            background: #4e9af1;
+        }
+        
+        .logo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            margin-top: 15px;
+        }
+        
+        .logo-item {
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo-item img {
+            max-height: 100%;
+            max-width: 100%;
+            justify-content: space-around;
+            object-fit: contain;
+        }
+        
+        .footer-bottom {
+            padding-top: 15px;
+            margin-top: 15px;
+            border-top: 1px solid #343a40;
+            font-size: 13px;
+        }
+
+        .visitor-counter {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+        }
+        
+        .visitor-counter h5 {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        .counter-display {
+            font-size: 16px;
+            font-weight: 600;
+            color: #0d6efd;
+            background-color: #fff;
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            letter-spacing: 2px;
+        }
+        
+        .quick-links-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .links-container {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .links-left {
+            text-align: right;
+            padding-right: 15px;
+            flex: 1;
+        }
+        
+        .links-right {
+            text-align: left;
+            padding-left: 15px;
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-section {
+                flex: 0 0 100%;
+                padding-right: 0;
+            }
+            
+            .logo-container {
+                gap: 40px;
+            }
+            
+            .logo-item {
+                justify-content: space-around;
+                height: 50px;
+            }
+            
+            .logo-section h3 {
+                font-size: 16px;
+            }
+            
+            .links-left,
+            .links-right {
+                text-align: center;
+                padding: 0;
+            }
+            
+            .links-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Combined Footer -->
+<footer class="footer">
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <h3>Brought to you by :</h3>
+            <div class="logo-container">
+                <!-- Replace these with your actual logo images -->
+                <div class="logo-item">
+                    <img src="./logo/IEEEKS.jpeg">
+                </div>
+                <div class="logo-item">
+                    <img src="./logo/ies-header.png" alt="Partner Logo 3">
+                </div>
+                <div class="logo-item">
+                    <img src="./logo/VLSI_Logo.webp" alt="Partner Logo 4">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Links -->
+        <div class="row mt-4">
+            <!-- Social Media -->
+           <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
+                <h5>Follow Us On Social:</h5>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <!-- Quick Links with Split Layout -->
+            <div class="col-lg-4 col-md-4 mb-4 mb-lg-0 quick-links-section">
+                <h5>Quick Links</h5>
+                <div class="links-container">
+                    <div class="links-left">
+                        <ul class="footer-links">
+                            <li><a href="https://ice2cpt.com/">Home</a></li>
+                            <li><a href="">Organizing Committee</a></li>
+                            <li><a href="">Call for Papers</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-right">
+                        <ul class="footer-links">
+                            <li><a href="https://ice2cpt.com/venue.html">Key Attractions</a></li>
+                            <li><a href="https://www.nitjsr.ac.in">NIT JSR Website</a></li>
+                            <li><a href="">Register Now</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Us -->
+            <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
+              <!--  <h5>Contact Us</h5>
+                <ul class="footer-links text-center">
+                    <li><a href="mailto:ice2cpt@gmail.com">ice2cpt@gmail.com</a></li>
+                    <li><a href="mailto:suryaprakash.ee@nitjsr.ac.in">suryaprakash.ee@nitjsr.ac.in</a></li>
+                    <li><a href="mailto:krnishant125@gmail.com">krnishant125@gmail.com</a></li>
+                </ul> -->
+                <div class="visitor-counter">
+                    <!-- <a href="http://s01.flagcounter.com/more/q6v"><img src="https://s01.flagcounter.com/count2/q6v/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a> -->
+                    <a href="https://www.flagcounter.me/details/fKF"><img src="https://www.flagcounter.me/fKF/" alt="Flag Counter"></a>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="row footer-bottom">
+            <div class="col-md-12 text-center">
+                <p class="mb-0">© ICE2CPT-2025. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Visitor Counter Section -->
+<!--<div class="visitor-counter">
+    <a href="http://s01.flagcounter.com/more/q6v"><img src="https://s01.flagcounter.com/count2/q6v/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a> -->
+ <!--   <a href="https://www.flagcounter.me/details/fKF"><img src="https://www.flagcounter.me/fKF/" alt="Flag Counter"></a>
+</div> -->
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
